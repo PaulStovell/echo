@@ -18,7 +18,8 @@ step "deploy-kubernetes-yaml" {
         git_dependencies {
             default_branch = "main"
             file_path_filters = ["echo/*"]
-            git_credential_type = "Anonymous"
+            git_credential_id = "GitCredentials-1"
+            git_credential_type = "Library"
             repository_uri = "https://github.com/PaulStovell/echo.git"
         }
     }
